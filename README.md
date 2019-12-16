@@ -1,6 +1,6 @@
-# splash_screen
+# wenze.africa
 
-A new Flutter application.
+A cross-plateform e-commerce application.
 
 ## Getting Started
 
