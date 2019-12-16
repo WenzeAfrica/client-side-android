@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
+import 'package:intro_slider/intro_slider.dart';
+import 'introslides.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -30,7 +32,8 @@ class SplashScreenState extends State<SplashScreen> {
   }
 
   onDoneLoading() async {
-    Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => HomeScreen()));
+
+    Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => IntroScreen()));
   }
 
   @override
@@ -38,7 +41,7 @@ class SplashScreenState extends State<SplashScreen> {
     return Container(
       decoration: BoxDecoration(
         image: DecorationImage(
-            image: AssetImage('assets/spla.png'),
+            image: AssetImage('assets/sp.jpg'),
             fit: BoxFit.cover
         ) ,
       ),
@@ -51,7 +54,7 @@ class SplashScreenState extends State<SplashScreen> {
   }
 }
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
